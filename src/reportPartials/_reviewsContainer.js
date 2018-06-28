@@ -3,9 +3,9 @@ import Review from "./_review.js";
 
 class ReviewsContainer extends Component {
   render() {
-    console.log(this.props.reviews.review1);
     return (
       <div className="review-Container">
+      <h2>{this.props.reviews.length} reviews</h2>
         {this.props.reviews.map(review => (
           <Review review={review} key={review.id} />
         ))}
