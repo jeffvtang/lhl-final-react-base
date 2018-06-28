@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Review extends Component {
+class ReviewsContainer extends Component {
   render() {
     console.log(this.props.reviews.review1)
     return (
@@ -11,4 +11,4 @@ class Review extends Component {
   }
 }
 
-export default Review;
+export default ReviewsContainer;
