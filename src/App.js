@@ -4,6 +4,8 @@ import './App.css';
 import Report from './Report.js'
 import { Router, Link } from "@reach/router"
 
+
+
 class App extends Component {
   render() {
     return (
@@ -12,9 +14,6 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <p className="App-intro">
-          Home page.
-        </p>
         <Link to="report">Reports</Link>
 
         <Router>
