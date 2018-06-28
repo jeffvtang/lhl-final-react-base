@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Report from './Report.js'
 import { Router, Link } from "@reach/router"
@@ -11,8 +10,10 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Project Title</h1>
+
+        <Link to="/">Login</Link> |
+        <Link to="/">Registration</Link> |
         <Link to="report">Reports</Link>
         </header>
 

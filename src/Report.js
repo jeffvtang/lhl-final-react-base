@@ -38,7 +38,37 @@ class Report extends Component {
           date: "June 28th",
           rating: 2,
           overall: 0.2
-        }
+        },
+        {
+          id: 3,
+          name: "Jacob2",
+          content: "Okay Food",
+          sentiment: {
+            joy: 0.38,
+            fear: 0.52,
+            sadness: 0.32,
+            disgust: 0.2,
+            anger: 0.8
+          },
+          date: "June 28th",
+          rating: 3,
+          overall: 0.5
+        },
+        {
+          id: 4,
+          name: "Jacoby",
+          content: "Bad Food",
+          sentiment: {
+            joy: 0.38,
+            fear: 0.52,
+            sadness: 0.32,
+            disgust: 0.2,
+            anger: 0.8
+          },
+          date: "June 28th",
+          rating: 1,
+          overall: 0.1
+        },
       ]
     };
   }
@@ -48,7 +78,8 @@ class Report extends Component {
       <div className="Report">
         <h1>Company Report</h1>
         <ReviewsContainer reviews={reviews} />
-        <PositivityChart reviews={reviews}/>
+        <PositivityChart reviews={reviews} />
+        <br/>
         <SentimentChart reviews={reviews} />
       </div>
     );
