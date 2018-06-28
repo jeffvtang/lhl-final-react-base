@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Report from './Report.js'
+import { Router, Link } from "@reach/router"
 
 class App extends Component {
   render() {
@@ -14,7 +15,11 @@ class App extends Component {
         <p className="App-intro">
           Home page.
         </p>
-        <Report />
+        <Link to="report">Reports</Link>
+
+        <Router>
+          <Report path="report"/>
+        </Router>
       </div>
     );
   }
